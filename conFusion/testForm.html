@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>            
+            #theForm {
+                background:blue;
+                color:aliceblue;
+                border: 2px;
+            }
+            
+            .row {
+                display: table-row;
+                height: 30px;
+            }
+            
+            .row label {
+                display: table-cell;
+            }
+            .row input {
+                display: table-cell;
+                border: 1px;
+                border-style: solid;
+                border-color: fuchsia;
+            }
+            .row label, .row input, #theForm {
+                border: 1px;
+                border-style: solid;
+                border-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="theForm">
+            <div class="row">
+                <label for="name">Name:</label>
+                <input type="text" name="name"/>
+            </div>
+            <div class="row">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName"/>
+            </div>
+            <div class="row">
+                <label for="age">Age:</label>
+                <input type="text" name="age"/>
+            </div>
+            <div class="row">
+                <label for="other">Other:</label>
+                <input type="text" name="Other"/>
+            </div>
+        </form>
+    </body>
+</html>
